@@ -1,0 +1,11 @@
+version: '3.9.0'
+
+services:
+  my-mysql:
+    image: mydocker_rwbyblog:1.0 
+    environment:
+      MYSQL_DATABASE: RWBY_blog #nombre
+    ports:
+      - "3306:3306" 
+    volumes:
+      - mysql-data:/var/lib/mysql 
